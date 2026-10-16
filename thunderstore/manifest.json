@@ -1,0 +1,9 @@
+{
+  "name": "ShadowTrim",
+  "version_number": "0.0.0",
+  "website_url": "https://github.com/tbsj1ga/ShadowTrimValheim",
+  "description": "More FPS in big bases: shorter sun-shadow distance for buildings and small objects, no shadow from floors lying on the ground. Measured -1 ms per frame. Client-side.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2350"
+  ]
+}
