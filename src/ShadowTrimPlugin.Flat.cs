@@ -169,6 +169,17 @@ namespace ShadowTrim
             _queueCursor = 0;
         }
 
+        // For the benchmark: the renderers already found, shadows off or back on, without
+        // looking at the pieces again.
+        private void FlipFlat(bool off)
+        {
+            for (int i = 0; i < _changed.Count; i++)
+            {
+                Changed ch = _changed[i];
+                if (ch.R != null) ch.R.shadowCastingMode = off ? ShadowCastingMode.Off : ch.Mode;
+            }
+        }
+
         // pieces now flat and renderers turned off, dropping the ones the game has unloaded
         private void FlatCounts(out int pieces, out int renderers)
         {

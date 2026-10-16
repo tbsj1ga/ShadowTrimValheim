@@ -14,7 +14,7 @@ namespace ShadowTrim
         private void RegisterCommands()
         {
             new Terminal.ConsoleCommand("shadowtrim",
-                "ShadowTrim. 'shadowtrim' switches it on and off to compare; 'shadowtrim status' counts the shadows around you",
+                "ShadowTrim. 'shadowtrim' switches it on and off to compare; 'shadowtrim status' counts the shadows around you; 'shadowtrim bench' measures the gain where you stand",
                 delegate(Terminal.ConsoleEventArgs args) { RunCommand(args); });
         }
 
@@ -29,6 +29,7 @@ namespace ShadowTrim
             {
                 string sub = args.Length > 1 ? args[1].ToLowerInvariant() : "";
                 if (sub == "status") { Say(args, Status()); return; }
+                if (sub == "bench") { StartBench(args); return; }
                 if (sub == "on" || sub == "off" || sub == "")
                 {
                     bool on = sub == "" ? !_cfgEnabled.Value : sub == "on";
@@ -36,7 +37,7 @@ namespace ShadowTrim
                     Say(args, "ShadowTrim " + (on ? "on" : "off") + ". 'shadowtrim status' counts the shadows around you.");
                     return;
                 }
-                Say(args, "shadowtrim [on|off|status]");
+                Say(args, "shadowtrim [on|off|status|bench]");
             }
             catch (Exception e) { Say(args, "shadowtrim failed: " + e.Message); }
         }
