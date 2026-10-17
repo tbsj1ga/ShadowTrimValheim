@@ -56,6 +56,7 @@ namespace ShadowTrim
             _cfgFlat.SettingChanged += delegate { _flatDirty = true; };
             _cfgFlatGap.SettingChanged += delegate { _flatDirty = true; };
             _cfgFlatTop.SettingChanged += delegate { _flatDirty = true; };
+            BindPreset();
         }
 
         // layer name -> metres, from the four named settings and OtherLayers

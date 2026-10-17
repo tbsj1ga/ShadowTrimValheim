@@ -17,7 +17,7 @@ Measure your own: stand still and type `shadowtrim bench` in the console (F5).
 
 - `shadowtrim` — on / off, to compare on the spot. `shadowtrim status` — the shadows around
   you by layer.
-- Every distance is configurable, for any layer.
+- A `Low` preset for weak PCs; every distance is configurable, for any layer.
 - **Client-side.** Install it if you want it; other players, the host and the server need
   nothing.
 - Pairs well with Valheim Community Patch, which fixes the logic costs of big bases; ShadowTrim
@@ -28,6 +28,8 @@ Measure your own: stand still and type `shadowtrim bench` in the console (F5).
 `BepInEx/config/j1ga.shadowtrim.cfg`, or in-game with ConfigurationManager (F1):
 
 - `Enabled` — on / off.
+- `Preset` — `Normal`, `Low` for weak PCs (shorter distances, rocks and other objects too), or
+  `Custom`, which it becomes by itself when you change a distance.
 - `Buildings` (60), `Decor` (40), `SmallObjects` (30), `Items` (25) — shadow distance in metres;
   0 = the game's own.
 - `OtherLayers` — any other layer as `layer=metres`, e.g. `static_solid=80`.

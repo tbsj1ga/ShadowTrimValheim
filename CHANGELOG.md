@@ -11,4 +11,5 @@ The version is set in one place — `ShadowTrimPlugin.Version` in `src/ShadowTri
   through `OtherLayers`.
 - Flat pieces lying on the ground (floors, path stones, rugs) cast no shadow; each piece is
   looked at once after it loads, within 1 ms per frame.
+- `Preset`: `Normal`, `Low` for weak PCs, `Custom`.
 - Console: `shadowtrim` (on / off), `shadowtrim status`, `shadowtrim bench`.

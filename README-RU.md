@@ -86,6 +86,7 @@ https://github.com/tbsj1ga/ShadowTrimValheim/issues
 | Раздел | Ключ | По умолчанию | Что |
 |---|---|---|---|
 | 01 General | `Enabled` | `true` | выкл: все тени как в игре |
+| 01 General | `Preset` | `Normal` | `Normal` (значения ниже), `Low` для слабых ПК (постройки 35 м, декор 25, мелкие объекты 20, предметы 15, `static_solid=60,Default=60`), `Custom` — ставится сам, когда меняете дальность |
 | 02 Shadow distance by layer | `Buildings` | `60` | слой `piece` |
 | 02 Shadow distance by layer | `Decor` | `40` | слой `piece_nonsolid` |
 | 02 Shadow distance by layer | `SmallObjects` | `30` | слой `Default_small` |

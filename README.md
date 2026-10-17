@@ -86,6 +86,7 @@ once. Distances are metres from the camera; 0 is the game's shadow distance.
 | Section | Key | Default | What |
 |---|---|---|---|
 | 01 General | `Enabled` | `true` | off: every shadow as in the game |
+| 01 General | `Preset` | `Normal` | `Normal` (the defaults below), `Low` for weak PCs (buildings 35 m, decor 25, small objects 20, items 15, `static_solid=60,Default=60`), `Custom` — set by itself when you change a distance |
 | 02 Shadow distance by layer | `Buildings` | `60` | layer `piece` |
 | 02 Shadow distance by layer | `Decor` | `40` | layer `piece_nonsolid` |
 | 02 Shadow distance by layer | `SmallObjects` | `30` | layer `Default_small` |
